@@ -9,12 +9,15 @@ DEVICE_PATH := device/xiaomi/lisa
 # Inherit from sm8350-common
 include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := lisa
+
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := lisa
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
-TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/xiaomi_QGKI.config vendor/lisa_QGKI.config
+TARGET_KERNEL_SOURCE := kernel/xiaomi/lisa
+TARGET_KERNEL_CONFIG := lisa_defconfig
 
 # Display
 TARGET_SCREEN_DENSITY := 440
@@ -22,7 +25,6 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel modules
 BOOT_KERNEL_MODULES := \
     hwid.ko \
-    msm_drm.ko \
     goodix_core.ko \
     xiaomi_touch.ko
 
