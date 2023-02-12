@@ -269,13 +269,13 @@
          This array should be equal in size to config_screenBrightnessBacklight -->
     <array name="config_screenBrightnessNits">
         <item>4.5</item>
-        <item>1000</item>
+        <item>800</item>
     </array>
 
     <!-- Minimum screen brightness setting allowed by power manager.
          The user is forbidden from setting the brightness below this level.
          Equivalent to 1/255. -->
-    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.00314100415</item>
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.00244200244</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          The user is forbidden from setting the brightness above this level.  -->
