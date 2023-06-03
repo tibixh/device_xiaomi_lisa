@@ -16,11 +16,14 @@ TARGET_OTA_ASSERT_DEVICE := lisa
 TARGET_BOOTLOADER_BOARD_NAME := lisa
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350_crystal
-TARGET_KERNEL_CONFIG += vendor/lisa_QGKI.config
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8350
+TARGET_KERNEL_CONFIG += vendor/lahaina-qgki_defconfig vendor/xiaomi_QGKI.config vendor/lisa_QGKI.config
 
 # Display
 TARGET_SCREEN_DENSITY := 440
+
+# Power
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Kernel modules
 BOOT_KERNEL_MODULES := \
